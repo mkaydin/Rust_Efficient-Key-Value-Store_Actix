@@ -1,0 +1,9 @@
+[package]
+name = "key_value_store"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"                                      # GET, POST, DELETE
+clap = { version = "4.0.29", features = ["derive"] } # for parsing
+env_logger = "0.10.0"                                # for logging
