@@ -1,12 +1,16 @@
-#### if there is no "rust" image
+#### just to build app with custom image
 
 ```bash
 docker build -t . my-rust-app-image
 ```
 
-#### if already have a "rust" image
+#### or with container create with rust image
 Dont download it again just create container
 and copy files of the project to container.
+
+```bash
+docker pull rust:latest
+```
 
 ```bash
 docker run -it -v key_value_store:/app/key_value_store \
